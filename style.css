@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'segoe UI';
+  user-select: none;
+}
+
+.curveBorder {
+  border-radius: 8px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.upperLayer {
+  display: flex;
+  width: 100vw;
+  height: 55vh;
+}
+
+.lowerLayer {
+  width: 100vw;
+  height: 45vh;
+}
+
+.timeline {
+  width: calc(100vw);
+  height: 45vh;
+  background: #333;
+}
+
+.media {
+  width: calc(100vw / 3);
+  height: 55vh;
+  background: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  width: calc(100vw / 3);
+  height: 55vh;
+  background: #999;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.videoContainer {
+  width: 100%;
+  height: calc(100% - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #0000002a;
+}
+
+.effects {
+  width: calc(100vw / 3);
+  height: 55vh;
+  background: #ccc;
+}
+
+.addFileIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background: #333;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.mediaContainer {
+  width: 95%;
+  height: 95%;
+}
+
+#videoPreview {
+  max-width: calc(100% - 10px);
+  max-height: calc(100% - 10px);
+}
+
+.videoControls {
+  height: calc(100% - (100% - 50px));
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control {
+  width: 50px;
+  height: 30px;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.videoProgressBar {
+  width: 100%;
+  height: 15px;
+}
+
+.videoProgress {
+  height: 100%;
+  width: 0;
+  background: #333;
+}

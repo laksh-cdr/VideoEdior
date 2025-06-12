@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="upperLayer">
+    <div class="media">
+      <div class="mediaContainer">
+        <label for="fileInput" class="addFileIcon pointer curveBorder">Add Media</label>
+      </div>
+      <input type="file" id="fileInput">
+    </div>
+
+    <div class="player">
+      <div class="videoContainer">
+        <video src="demo2.mp4" id="videoPreview"></video>
+      </div>
+
+      <div class="videoProgressBar">
+        <div id="videoProgress" class="videoProgress"></div>
+      </div>
+
+      <div class="videoControls">
+        <div id="start" class="control pointer curveBorder">Start</div>
+        <div id="play" class="control pointer curveBorder">Play</div>
+        <div id="end" class="control pointer curveBorder">End</div>
+      </div>
+    </div>
+
+    <div class="effects"></div>
+  </div>
+
+  <div class="lowerLayer">
+    <div class="timeline"></div>
+  </div>
+  
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
